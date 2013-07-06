@@ -7,8 +7,16 @@ body {
     color: white;
 }
 
+/* Funções de apoio */
 .clearfix {
 	clear: both;
+}
+
+.animacao {
+	-webkit-transition: all 0.3s linear; /* Firefox */
+	   -moz-transition: all 0.3s linear; /* WebKit */
+	     -o-transition: all 0.3s linear; /* Opera */
+	        transition: all 0.3s linear; /* Standard */
 }
 
 .separador {
@@ -19,28 +27,6 @@ body {
 
 }
 
-#abertura {
-	/*width: 733px;
-	margin: 0 auto; */
-}
-
-.livros,
-.abas_inativas,
-.abas_ativas {
-	float: left;
-}
-
-.abas_inativas,
-.abas_ativas {
-	a {
-		display: block;
-		margin-bottom: 15px;
-	}
-}
-.abas_inativas a {
-	visibility: hidden;
-}
-
 .ativo {
 	display: block;
 }
@@ -49,12 +35,83 @@ body {
 	display: none;
 }
 
-.livro {
+/* ************** */
+
+#abertura {
+	position: relative;
+}
+
+.livros,
+.abas_inativas,
+.abas_ativas {
+	width: auto;
+
+}
+
+/* NAVEGACAO 
+   ************************* */
+.abas_inativas,
+.abas_ativas {
+	position: absolute;	
+	z-index: 2;
+	width: 35px;
+
+	a {
+		display: block;
+		margin-bottom: 15px;
+	}
+}
+
+.abas_ativas {
+	right: 0;
+
+	a {
+		margin-left: -6px;
+		.animacao;
+	}
+	a:hover {
+		margin-left: 0;
+		.animacao;
+	}
+}
+
+.abas_inativas { 
+	a {
+		visibility: hidden;
+	}
+}
+/* ************************* */
+
+/* Estrutura base das seções do site */
+.livros {	
+	position: absolute;
+	z-index: 4;
+	margin-left: 35px;
+}
+
+#mensagem {
+	display: none;
+	position: absolute;
+	top: 4%;
+	left: 50%;	
+	z-index: 1;
+	width: 200px;
+	margin-left: -110px;
+	padding: 10px;
+	background: #333;
+	border: 2px solid #fff;
+	border-radius: 18px;
+	text-align: center;
+}
+
+
+.livro {	
 	width: 870px;	
 	min-height: 700px;
 
 	.corpo {
 		padding:20px 60px 30px;
+		margin-bottom: 100px;
 	}
 
 	.texto {
@@ -131,7 +188,6 @@ body {
 
 
 
-
 .livro_sobre {
 	background: url('../img/sobre-bg.jpg') 100% 100%;
 	color: #232323;
@@ -150,12 +206,39 @@ body {
 
 	.equipe_projeto {
 		.pessoa {
-			width: 150px;
+			position: relative;
+			width: 164px;
+			height: 164px;
 			display: inline-block;
 			margin-right: 20px;
+			margin-bottom: 60px;
+
+
+			.imagem {
+				position: absolute;
+				box-shadow: 1px 1px 5px #000;
+				border: 7px solid #fff;
+			}
+
+			.dobra {
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-bottom: 20px solid #000;
+				border-left: 20px solid #ccc; 
+				z-index: 10;
+				bottom: 0;
+				right: 0;
+			}
+
+			.descricao {
+				margin-top: 164px;
+			}
+
 		}
 	}
 }
+
 
 
 footer {

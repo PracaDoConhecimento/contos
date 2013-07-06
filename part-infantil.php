@@ -3,7 +3,7 @@
     Página interna
 */
 ?>
-<div class="livro_infantil livro inativo">
+<div class="livro_infantil livro">
     <div class="topo">
         <img src="img/infantil-topo.png" />
     </div>
@@ -21,7 +21,7 @@
             <audio preload="auto" controls>
                 <source src="mp3/infantil/acorda-educador.wav" />
             </audio>
-            <p><a href="mp3/infatil/acorda-educador.wav">Clique para fazer o download</a></p>
+            <p><a href="mp3/infantil/acorda-educador.wav">Clique para fazer o download</a></p>
         </div><!-- /player -->
         <div class="equipe_projeto">
             <h3>Autores</h3>

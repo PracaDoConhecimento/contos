@@ -3,7 +3,7 @@
     Página interna
 */
 ?>
-<div class="livro_trabalho livro inativo">
+<div class="livro_trabalho livro">
 
     <div class="topo">
         <!-- <img src="img/trabalho-topo.png" /> -->
@@ -21,13 +21,13 @@
             <!-- player -->
             
             <h4>Dia do Trabalho</h4>
-            <audio preload="auto">
+            <audio preload="auto" controls>
                 <source src="mp3/trabalho/dia-do-trabalho.mp3" />
             </audio>
             <p><a href="mp3/trabalho/dia-do-trabalho.mp3">Clique para fazer o download</a></p>            
 
             <h4>Primeiro de Maio</h4>
-            <audio preload="auto">
+            <audio preload="auto" controls>
                 <source src="mp3/trabalho/primeiro-maio.mp3" />
             </audio>
             <p><a href="mp3/trabalho/primeiro-maio.mp3">Clique para fazer o download</a></p>

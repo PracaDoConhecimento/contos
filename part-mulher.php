@@ -3,7 +3,7 @@
     Página interna
 */
 ?>
-<div class="livro_mulher livro inativo">
+<div class="livro_mulher livro">
 
     <div class="topo">
         <img src="img/mulher-topo.png" />
