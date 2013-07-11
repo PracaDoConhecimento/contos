@@ -1,6 +1,5 @@
 $(document).ready(function() {	
-	// Stuff to do as soon as the DOM is ready;
-	
+
 	var controle = 0;
 
 	$('.abas_ativas a').click(function() {		
@@ -29,6 +28,9 @@ $(document).ready(function() {
 			$('.abas_inativas').find('.ativo').removeClass('ativo').addClass('inativo');
 		}
 
+
+		window.location.hash = "#" + className;
+
 		return false;
 		
 	});
@@ -45,6 +47,8 @@ $(document).ready(function() {
 		if ( $('.capa').hasClass('inativo') )
 			 $('.capa').removeClass('inativo').addClass('ativo');
 
+		window.location.hash = "#";
+
 		return false;
 	});	
 
@@ -57,6 +61,16 @@ $(document).ready(function() {
 			$('#mensagem').fadeToggle('fast','linear');
 		}
 	});
-	
+
+
+
+	/* Hash Navigation */
+	var urlHash = window.location.href.split('#')[1]; // Get hash from URL	
+
+	if(urlHash !== "") {
+		var $urlHash = $('.abas_ativas .'+urlHash);
+		$urlHash.click();			
+	}
 
 });
+

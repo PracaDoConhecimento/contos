@@ -21,10 +21,10 @@
 
                 </div>
                 <div class="abas_ativas">
-                    <a href="#" class="infantil"><img src="img/aba-infantil.png" /></a>
-                    <a href="#" class="mulher"><img src="img/aba-mulher.png" /></a>
-                    <a href="#" class="trabalho"><img src="img/aba-trabalho.png" /></a>
-                    <a href="#" class="sobre"><img src="img/aba-sobre.png" /></a>
+                    <a href="#infantil" class="infantil"><img src="img/aba-infantil.png" /></a>
+                    <a href="#mulher" class="mulher"><img src="img/aba-mulher.png" /></a>
+                    <a href="#trabalho" class="trabalho"><img src="img/aba-trabalho.png" /></a>
+                    <a href="#sobre" class="sobre"><img src="img/aba-sobre.png" /></a>
                 </div>
             </div><!-- /abertura -->
 
@@ -34,7 +34,7 @@
         </div> <!-- /container -->
 
 
-        <footer>
+        <footer style="box-shadow: 10px 0px 20px #000;">
             <div class="container">
                 <!-- logo praça do conhecimento -->
                 <div class="assinatura">
@@ -42,14 +42,21 @@
                 </div>
 
                 <!-- redes sociais? -->
-                <div class="redes_sociais">
-                    <h5>Curtiu? Então Compartilhe!</h5>
-                    <span class='st_facebook_large' displayText='Facebook'></span>
-                    <span class='st_googleplus_large' displayText='Google +'></span>
-                    <span class='st_twitter_large' displayText='Tweet'></span>
-                    <span class='st_sharethis_large' displayText='ShareThis'></span>
-                    <span class='st_email_large' displayText='Email'></span>
+                <div class="pull-right">
+                    <div class="redes_sociais" style="text-align:right; margin: 9px 0;">
+                        <span class='st_facebook' displayText='Facebook'></span>
+                        <span class='st_googleplus' displayText='Google +'></span>
+                        <span class='st_twitter' displayText='Tweet'></span>
+                        <span class='st_sharethis' displayText='ShareThis'></span>
+                        <span class='st_email' displayText='Email'></span>
+                    </div>
+
+                    <div style="color:#000; text-align:right;">
+                        <small>O código desta site está disponível no <a href="https://github.com/felipefernandes/contos" target="_blank" style="color:#000;"><b>GitHub</b></a>.</small>
+                    </div>
                 </div>
+
+
             </div>
         </footer>    
 
